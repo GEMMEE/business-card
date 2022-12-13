@@ -1,0 +1,90 @@
+body {
+    margin: 20px;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.card {
+    width: 400px;
+    /* 
+    Challenge:
+    Replace the two margin properties with a 
+    single margin shorthand.
+    */
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #a7c957;
+    color: #050407;
+    border-bottom: 10px solid #ccbbea;
+    border-top: 5px solid #ccbce9;
+
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+h3{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  
+p, h4{
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.card {
+    box-shadow: 5px 5px blue, 10px 10px 5px red;
+}
+
+h3:hover, h4:hover{
+    background-color: yellow;
+}
+p:hover {
+    background-color: whitesmoke;
+}
+
+/* The animation code */
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+  
+  /* The element to apply the animation to */
+  .card {
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
